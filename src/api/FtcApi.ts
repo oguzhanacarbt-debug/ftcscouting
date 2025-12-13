@@ -1,7 +1,7 @@
 import type { Event, Team, Match, Award } from '@/models/DataModels';
 
 // Use local proxy in development to avoid CORS issues
-const FTC_API_BASE = import.meta.env.DEV ? '/api/ftc' : 'https://ftc-events.firstinspires.org/v2.0';
+const FTC_API_BASE = '/api/ftc';
 
 interface FtcApiConfig {
   apiKey: string;
